@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Secure checkout – enter your delivery details and finalise your sneaker purchase.">
+    <meta name="keywords" content="checkout, sneaker payment, sneaker delivery">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout – Kick Exquisite</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="promo-bar"><p>Free Delivery on Orders Over R1000</p></div>
+
+    <div class="nav-container">
+        <div class="logo"><h1>Kick Exquisite</h1></div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html" class="active">Checkout</a></li>
+                <li><a href="information.html">Info</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="collections">
+
+    <h2>Checkout</h2>
+
+    <div id="order-summary" style="max-width:600px; margin:auto; background:#fafafa; padding:20px; border-radius:12px;"></div>
+
+    <form class="checkout-form">
+
+        <div class="form-row">
+            <label>Full Name</label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-row">
+            <label>Email</label>
+            <input type="email" required>
+        </div>
+
+        <div class="form-row">
+            <label>Delivery Address</label>
+            <textarea required></textarea>
+        </div>
+
+        <div class="form-row">
+            <label>Payment Method</label>
+            <select required>
+                <option>Credit / Debit Card</option>
+                <option>PayPal</option>
+                <option>PayFast</option>
+                <option>Bank Transfer</option>
+            </select>
+        </div>
+
+        <button class="checkout-btn" type="submit">Confirm & Pay</button>
+
+    </form>
+
+</section>
+
+<footer class="site-footer">
+    <p>© 2025 Kick Exquisite</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

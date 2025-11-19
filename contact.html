@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact – Kick Exquisite</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="Contact Kick Exquisite for support, orders, and general questions.">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="promo-bar"><p>Free Delivery on Orders Over R1000</p></div>
+
+    <div class="nav-container">
+        <div class="logo"><h1>Kick Exquisite</h1></div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="information.html">Info</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="collections">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm" class="wide-form">
+
+        <div class="form-row-horizontal">
+            <label>Name:</label>
+            <input type="text" id="cName" required minlength="2">
+        </div>
+
+        <div class="form-row-horizontal">
+            <label>Email:</label>
+            <input type="email" id="cEmail" required>
+        </div>
+
+        <div class="form-row-horizontal">
+            <label>Phone:</label>
+            <input type="text" id="cPhone" required pattern="[0-9]{10}">
+        </div>
+
+        <div class="form-row-horizontal">
+            <label>Type of Message:</label>
+            <select id="cType" required>
+                <option value="">Choose...</option>
+                <option>Order Issue</option>
+                <option>Product Question</option>
+                <option>General Message</option>
+            </select>
+        </div>
+
+        <div class="form-row-horizontal">
+            <label>Message:</label>
+            <textarea id="cMessage" required minlength="10"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <p id="cStatus"></p>
+    </form>
+
+</section>
+
+<footer class="site-footer">
+    <p>© 2025 Kick Exquisite</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquiry – Kick Exquisite</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="Send a sneaker enquiry about pricing, restocks or sizing.">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="promo-bar"><p>Free Delivery on Orders Over R1000</p></div>
+
+    <div class="nav-container">
+        <div class="logo"><h1>Kick Exquisite</h1></div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="information.html">Info</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="collections">
+    <h2>Product Enquiry Form</h2>
+
+    <form id="enquiryForm" class="wide-form">
+
+        <div class="form-row-horizontal">
+            <label>Name:</label>
+            <input type="text" id="enqName" required>
+        </div>
+
+        <div class="form-row-horizontal">
+            <label>Email:</label>
+            <input type="email" id="enqEmail" required>
+        </div>
+
+        <div class="form-row-horizontal">
+            <label>Sneaker:</label>
+            <select id="enqProduct" required>
+                <option value="">Select...</option>
+                <option>New Balance 550</option>
+                <option>Adidas Samba</option>
+                <option>Puma Suede XL</option>
+                <option>Black Air Force 1</option>
+                <option>Jordan 1 Low Retro</option>
+            </select>
+        </div>
+
+        <div class="form-row-horizontal">
+            <label>Message:</label>
+            <textarea id="enqMessage" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Enquiry</button>
+
+        <p id="enqStatus"></p>
+    </form>
+
+</section>
+
+<footer class="site-footer">
+    <p>© 2025 Kick Exquisite</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

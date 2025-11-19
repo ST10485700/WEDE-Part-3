@@ -1,0 +1,323 @@
+/* ==============================
+   KICK EXQUISITE – FINAL FULL CSS
+   ============================== */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #111;
+  line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* HEADER */
+.site-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 3px solid purple;
+}
+
+.logo h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+  color: purple;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(85%);
+  transition: transform 1s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+/* COLLECTIONS */
+.collections {
+  padding: 70px 40px;
+  text-align: center;
+  background-color: white;
+}
+
+.collections h2 {
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 35px;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.product-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #000;
+}
+
+.price {
+  color: purple;
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* ADD TO CART BUTTON */
+.add-to-cart {
+  background-color: purple;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  color: white;
+  border-radius: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.add-to-cart:hover {
+  background-color: black;
+}
+
+/* ABOUT */
+.about-home {
+  background-color: #f3f3ff;
+  padding: 80px 50px;
+  text-align: center;
+}
+
+/* CULTURE */
+.culture-preview {
+  padding: 80px 60px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.style-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.style-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.style-card:hover img {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  border-top: 3px solid purple;
+}
+
+/* BUTTON */
+.btn,
+.checkout-btn {
+  display: inline-block;
+  background-color: purple;
+  color: white;
+  padding: 12px 30px;
+  margin-top: 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.checkout-btn:hover {
+  background-color: black;
+}
+
+/* -----------------------------
+   HORIZONTAL FORMS (Contact & Enquiry)
+   ----------------------------- */
+
+.wide-form {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-row-horizontal label {
+  width: 180px;
+  font-weight: bold;
+}
+
+.form-row-horizontal input,
+.form-row-horizontal textarea,
+.form-row-horizontal select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+textarea {
+  height: 110px;
+}
+
+/* CART TABLE */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  border-bottom: 1px solid #ccc;
+  padding: 12px;
+}
+
+.qty-btn {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background: black;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
+
+/* SCROLL BUTTON */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+
+#scrollTopBtn:hover {
+  background-color: black;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .form-row-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row-horizontal label {
+    width: 100%;
+  }
+}

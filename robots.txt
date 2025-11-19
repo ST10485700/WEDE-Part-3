@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://st10485700.github.io/WEDE-Part-3/sitemap.xml
